@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Fire Tournament - Bangladesh</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/logo.png" alt="FF Tournament BD" class="logo-img">
+                <span class="logo-text">FreeFire Tournament</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#tournaments">Tournaments</a></li>
+                <li><a href="#leaderboard">Leaderboard</a></li>
+                <li><a href="#teams">Teams</a></li>
+                <li><a href="#results">Results</a></li>
+                <li><a href="#how-to-play">How to Play</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button class="btn btn-login" id="loginBtn">Login</button>
+                <button class="btn btn-register" id="registerBtn">Register</button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Battle for Glory in Bangladesh's Biggest Free Fire Tournament</h1>
+                <p>Compete with the best Free Fire players in Bangladesh. Win exciting prizes and prove your skills!</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" id="viewTournamentsBtn">View Tournaments</button>
+                    <button class="btn btn-secondary" id="createTeamBtn">Create Team</button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>500+</h3>
+                        <p>Active Players</p>
+                    </div>
+                    <div class="stat">
+                        <h3>৳2,00,000+</h3>
+                        <p>Prize Distributed</p>
+                    </div>
+                    <div class="stat">
+                        <h3>100+</h3>
+                        <p>Tournaments</p>
+                    </div>
+                    <div class="stat">
+                        <h3>50+</h3>
+                        <p>Teams</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/hero-bg.png" alt="Free Fire Tournament">
+            </div>
+        </div>
+    </section>
+
+    <!-- Tournaments Section -->
+    <section class="tournaments" id="tournaments">
+        <div class="container">
+            <h2 class="section-title">Live & Upcoming Tournaments</h2>
+            <div class="tournament-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="solo">Solo</button>
+                <button class="filter-btn" data-filter="duo">Duo</button>
+                <button class="filter-btn" data-filter="squad">Squad</button>
+                <button class="filter-btn" data-filter="free">Free Entry</button>
+                <button class="filter-btn" data-filter="paid">Paid Entry</button>
+            </div>
+            <div class="tournaments-grid" id="tournamentsGrid">
+                <!-- Tournaments will be loaded here via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Play Section -->
+    <section class="how-to-play" id="how-to-play">
+        <div class="container">
+            <h2 class="section-title">How to Participate</h2>
+            <div class="steps-grid">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <h3>1. Register Account</h3>
+                    <p>Create your account with Free Fire ID and valid phone number</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>2. Create/Join Team</h3>
+                    <p>Create your own team or join existing teams</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>3. Join Tournament</h3>
+                    <p>Register for tournaments with entry fee (if any)</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>4. Play & Win</h3>
+                    <p>Play at scheduled time and win exciting prizes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Methods -->
+    <section class="payment-methods">
+        <div class="container">
+            <h2 class="section-title">Payment Methods</h2>
+            <p class="section-subtitle">We support all Bangladeshi payment methods</p>
+            <div class="payment-grid">
+                <div class="payment-method">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile Banking</h3>
+                    <p>bKash, Nagad, Rocket</p>
+                </div>
+                <div class="payment-method">
+                    <i class="fas fa-credit-card"></i>
+                    <h3>Bank Cards</h3>
+                    <p>Visa, MasterCard, DBBL Nexus</p>
+                </div>
+                <div class="payment-method">
+                    <i class="fas fa-university"></i>
+                    <h3>Bank Transfer</h3>
+                    <p>Direct Bank Transfer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>FreeFire Tournament BD</h3>
+                    <p>The official Free Fire tournament platform for Bangladeshi gamers. Compete, win, and earn real money!</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#tournaments">Tournaments</a></li>
+                        <li><a href="#leaderboard">Leaderboard</a></li>
+                        <li><a href="#rules">Rules & Regulations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> +880 1XXX-XXXXXX</p>
+                    <p><i class="fas fa-envelope"></i> support@freefiretournamentbd.com</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FreeFire Tournament Bangladesh. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Login to Your Account</h2>
+            <form id="loginForm">
+                <input type="text" placeholder="Username or Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+            <p class="modal-link">Don't have an account? <a href="#" id="showRegister">Register here</a></p>
+        </div>
+    </div>
+
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Create New Account</h2>
+            <form id="registerForm">
+                <input type="text" placeholder="Username" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <input type="text" placeholder="Phone Number" required>
+                <input type="text" placeholder="Free Fire ID" required>
+                <button type="submit" class="btn btn-primary">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
